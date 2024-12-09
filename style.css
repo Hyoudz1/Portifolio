@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Quicksand&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration:none;
+    list-style:none;
+    font-family:"Kode Mono";
+
+}
+
+body{
+    overflow: hidden;
+}
+
+.background{
+    background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5));
+    background-image: url("https://wallpapers.com/images/hd/witcher-3-geralt-in-4k-jq0eyfezvdikv9yu.jpg");
+    background-size: cover;
+    background-position:center;
+    width:100%;
+    height:100vh;
+}
+
+header{
+    display:flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top:1rem;
+}
+
+.cabeçalho-link{
+    display:flex;
+    gap:10rem;
+    font-weight: 500;
+    cursor:pointer;
+}
+
+.cabeçalho-link a{
+    color:darkred;
+    font-size:30px;
+}
+
+.cabeçalho-link a:hover{
+    color:blue;
+    transition: 0.5s all;
+
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 0.5px solid red;
+    color: red;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Inicial */
+    animation: pulsar 1.5s infinite; /* Chama a animação */
+}
+
+@keyframes pulsar {
+    0%, 100% {
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 165, 0, 0.8);
+    }
+}
+
+.logo:hover {
+    transform: scale(1.2); /* Aumenta ao passar o mouse */
+    transition: transform 0.3s ease-in-out;
+}
+
+
+button{
+    color:darkred;
+    background:transparent;
+    border: 1px solid red;
+    padding:5px;
+    border-radius: 13px;
+    width:100px;
+}
+
+button:hover{
+    background-color: red;
+    color:blue;
+    cursor:pointer;
+    transition:01s;
+    
+
+}
+
+.container{
+    padding:150px 0 0 130px;
+}
+
+.text h3{
+    color:darkred;
+    font-size: 20px;
+
+}
+
+.text h1{
+    color:darkred;
+    margin-top:10px;;
+    font-size:15px;
+    
+}
+
+.text span{
+    color:black;
+}
+
+.text p{
+    color:darkred;
+    font-size:19px;
+    font-weight: bold; 
+    color: inherit;  
+}
+
+.images {
+    display: flex;
+    justify-content: space-between; /* Afasta as imagens para os lados */
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 50px; /* Ajusta o espaço entre as imagens e as bordas laterais do contêiner */
+}
+
+.images img {
+    width: 200px; 
+    height: auto; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.images img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
